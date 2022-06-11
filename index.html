@@ -1,971 +1,1201 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="sayuru akash" content="Sayuru Akash">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-	<title>Sayuru Akash - Personal Resume</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar" class="has-loading-screen">
-    <div class="ts-page-wrapper" id="page-top">
-        <!--NAVIGATION ******************************************************************************************-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-            <div class="container">
-                <a class="navbar-brand ts-push-down__50 position-absolute ts-bottom__0 bg-white pb-0 ts-z-index__1 ts-scroll" href="#page-top">
-                    <img src="assets/img/logo.png" alt="sayuru akash logo">
-                </a>
-                <!--end navbar-brand-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--end navbar-toggler-->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-block d-lg-flex ml-auto text-right">
-                        <a class="nav-item nav-link active ts-scroll" href="#page-top">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link ts-scroll" href="#my-services">Services</a>
-                        <a class="nav-item nav-link ts-scroll" href="#about-me">About Me</a>
-                        <a class="nav-item nav-link ts-scroll" href="#my-skills">Skills</a>
-                        <a class="nav-item nav-link ts-scroll" href="#portfolio">Portfolio</a>
-                        <a class="nav-item nav-link ts-scroll" href="#testimonials">Clients</a>
-                        <a class="nav-item nav-link ts-scroll mr-2" href="#contact">Contact</a>
-                    </div>
-                    <!--end navbar-nav-->
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
-                <!--end collapse-->
-            </div>
-            <!--end container-->
-        </nav>
-        <!--end navbar-->
-        <!--*********************************************************************************************************-->
-        <!--************ HERO ***************************************************************************************-->
-        <!--*********************************************************************************************************-->
-        <div id="ts-hero" class="ts-animate-hero-items">
 
-            <!--HERO CONTENT ****************************************************************************************-->
-            <div class="container position-relative h-100 ts-align__vertical">
-                <div class="row w-100">
-                    <div class="col-md-8">
-                        <!--SOCIAL ICONS-->
-                        <figure class="ts-social-icons mb-4">
-                            <a href="https://facebook.com/sayuru.me" class="mr-3">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://twitter.com/sayuru_akash" class="mr-3">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://instagram.com/sayuru_akash" class="mr-3">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://pinterest.com/sayuru_akash" class="mr-3">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/sayuruakash/" class="mr-3">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </figure>
+              </div>
+            </li>
 
-                        <!--TITLE -->
-                        <h1>I am Sayuru Akash</h1>
-                        <h1 class="ts-bubble-border">
-                            <span class="ts-title-rotate">
-                                <span class="active">Developer</span>
-                                <span>Freelancer</span>
-                                <span>Artist</span>
-								<span>Creator</span>
-                                <span>Writer</span>
-                            </span>
-                        </h1>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
-                    </div>
-                    <!--end col-md-8-->
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
-                <!--end row-->
-                <a href="#my-services" class="ts-btn-effect position-absolute ts-bottom__0 ts-left__0 ts-scroll ml-3 mb-3">
-                    <span class="ts-visible ts-circle__sm rounded-0 ts-bg-primary">
-                        <i class="fa fa-arrow-down text-white"></i>
-                    </span>
-                    <span class="ts-hidden ts-circle__sm rounded-0">
-                        <i class="fa fa-arrow-down text-white"></i>
-                    </span>
-                </a>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
 
             </div>
-            <!--end container-->
-            <!--END HERO CONTENT ************************************************************************************-->
 
-            <!--HERO BACKGROUND *************************************************************************************-->
-            <div class="ts-background">
-                <div class="ts-background-image" data-bg-image="assets/img/background.jpg"></div>
-            </div>
-            <!--END HERO BACKGROUND *********************************************************************************-->
+          </section>
 
         </div>
-        <!--end #hero-->
 
-        <!--*********************************************************************************************************-->
-        <!--************ CONTENT ************************************************************************************-->
-        <!--*********************************************************************************************************-->
-        <main id="ts-content">
 
-            <!--MY SERVICES ***********************************************************************************-->
-            <section id="my-services" class="ts-block ts-xs-text-center pb-0">
-                <div class="container">
-                    <div class="ts-title text-center">
-                        <h2>My Services</h2>
-                    </div>
-                    <!--end ts-title-->
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-brushes.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Web Designing</h4>
-                                        <p class="mb-0">
-                                            Web and Application Front-end Designing
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".1s">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-camera.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Web Development</h4>
-                                        <p class="mb-0">
-                                            Web and Application Back-end Development
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".2s">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-video.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Coding</h4>
-                                        <p class="mb-0">
-                                            Coding and Developing Programs in C, C#, Java, Dart, etc.
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".3s">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-pencil.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Copy Writing</h4>
-                                        <p class="mb-0">
-                                            Writing Creative Content
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".4s">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-lcd.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Article Writing</h4>
-                                        <p class="mb-0">
-                                            SEO-friendly article writing
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
-                        <div class="col-sm-6 col-md-4 col-xl-4">
-                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".5s">
-                                <div class="ts-item-content">
-                                    <div class="ts-item-header">
-                                        <figure class="icon">
-                                            <img src="assets/img/icon-phone.png" alt="">
-                                        </figure>
-                                        <!--end icon-->
-                                    </div>
-                                    <!--end ts-item-header-->
-                                    <div class="ts-item-body">
-                                        <h4>Beat Mixing</h4>
-                                        <p class="mb-0">
-                                            Mixing beats and creating electronic music 
-                                        </p>
-                                    </div>
-                                    <!--end ts-item-body-->
-                                    <div class="ts-item-footer">
-                                        <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect">
-                                            <span>Read More</span>
-                                        </a>
-                                    </div>
-                                    <!--end ts-item-footer-->
-                                </div>
-                                <!--end ts-item-content-->
-                            </div>
-                            <!--end ts-item-->
-                        </div>
-                        <!--end col-xl-4-->
+        <!--
+          - clients
+        -->
 
-                    </div>
-                    <!--end row-->
-                </div>
-                <!--end container-->
-            </section>
-            <!--END MY SERVICES *************************************************************************************-->
+        <section class="clients">
 
-            <section id="about-me" class="ts-block pb-4">
-                <div class="container">
-                    <div class="ts-title text-center">
-                        <h2>About Me</h2>
-                    </div>
-                    <!--end ts-title-->
-                    <div class="row ts-align__vertical">
-                        <div class="col-md-6">
-                            <img src="assets/img/avatar.jpg" alt="" class="mw-100 mb-5">
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="ts-bubble-border">Hi There</h4>
-                            <p>
-                                Sayuru Akash Amarasinghe (born 14 June 2002, is a pioneer personality in Western Province, Sri Lanka. 
-                                He works as a recognized developer, content creator, and writer.
-                            </p>
-                            <dl class="ts-column-count-2">
-                                <dt>Name:</dt>
-                                <dd>Sayuru Akash</dd>
-                                <dt>Phone:</dt>
-                                <dd>+94 76-8622-302</dd>
-                                <dt>Email:</dt>
-                                <dd>contact@sayuru.me</dd>
-                                <dt>Twitter:</dt>
-                                <dd>@sayuru_akash</dd>
-                            </dl>
-                            <hr class="ts-hr-light mb-5">
-                            <a href="#contact" class="ts-btn-effect mr-2">
-                                <span class="ts-visible btn btn-primary ts-btn-arrow">Contact Me</span>
-                                <span class="ts-hidden btn btn-primary ts-btn-arrow" data-bg-color="#d44729">Contact Me</span>
-                            </a>
-                            <!--<a href="#contact" class="btn btn-primary ts-btn-arrow mr-2">Contact Me</a>-->
-                            <!--<a href="#contact" class="btn btn-outline-light ts-btn-border-light">-->
-                                <!--<i class="fa fa-download small mr-2"></i>-->
-                                <!--Download CV-->
-                            <!--</a>-->
-                            <a href="https://bit.ly/32Fx4Ew" class="ts-btn-effect mr-2">
-                                <span class="ts-visible btn btn-outline-light">
-                                    <i class="fa fa-download small mr-2"></i>
-                                    Download CV
-                                </span>
-                                <span class="ts-hidden btn btn-light bg-white">
-                                    <i class="fa fa-download small mr-2"></i>
-                                    Download CV
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <!--end row-->
-                </div>
-            </section>
+          <h3 class="h3 clients-title">Clients</h3>
 
-            <section class="ts-block">
-                <div class="container">
-                    <div class="text-center px-5 pt-5 position-relative">
-                        <h3 class="my-3">
-                            Let’s Work Together On Your Next Project!
-                        </h3>
-                        <a href="#contact" class="btn btn-primary mr-2 ts-push-down__50 ts-has-talk-arrow">Hire Me Now!</a>
-                        <div class="ts-background ts-opacity__20" data-bg-image="assets/img/bg-keyboard.jpg"></div>
-                    </div>
-                </div>
-            </section>
+          <ul class="clients-list has-scrollbar">
 
-            <section id="my-skills" class="ts-block pb-5">
-                <div class="container">
-                    <div class="ts-title text-center">
-                        <h2>My Skills</h2>
-                    </div>
-                    <!--end ts-title-->
-                    <h4>Every Day is a  New Challenge</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum
-                                ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta
-                                sem turpis quis leo. Nulla in feugiat elit.
-                            </p>
-                            <p>
-                                Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin
-                                turpis in enim elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus
-                                et ultrices posuere cubilia Curae
-                            </p>
-                            <a href="#contact" class="btn btn-outline-light mb-5">Contact Me</a>
-                        </div>
-                        <!--end col-md-6-->
-                        <div class="col-md-6">
-                            <div class="progress" data-progress-width="80%">
-                                <h5 class="ts-progress-title">Web Designing</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!--end progress-->
-                            <div class="progress" data-progress-width="60%">
-                                <h5 class="ts-progress-title">Web Development</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!--end progress-->
-                            <div class="progress" data-progress-width="90%">
-                                <h5 class="ts-progress-title">Writing</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!--end progress-->
-                            <div class="progress" data-progress-width="40%">
-                                <h5 class="ts-progress-title">Coding</h5>
-                                <figure class="ts-progress-value"></figure>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!--end progress-->
-                        </div>
-                        <!--end col-md-6-->
-                    </div>
-                    <!--end row-->
-                </div>
-                <!--end container-->
-            </section>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
 
-            <section class="ts-block pb-5" id="portfolio">
-                <div class="container">
-                    <div class="ts-title">
-                        <h2>Portfolio</h2>
-                    </div>
-                    <!--end ts-title-->
-                    <div class="card-columns ts-gallery ts-column-count-4">
-                        <a href="assets/img/img-work-01.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__item-description">
-                                <h6 class="ts-opacity__50">Branding</h6>
-                                <h4>Pehaz</h4>
-                            </div>
-                            <img src="assets/img/img-work-01.png" class="card-img" alt="">
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-02.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Webdesign</h6>
-                                    <h4>Carilo</h4>
-                                </div>
-                                <img src="assets/img/img-work-02.png" class="card-img" alt="">
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-03.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-03.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Typography</h6>
-                                    <h4>Kali</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-04.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-04.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Identity</h6>
-                                    <h4>Purity</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-05.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-05.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Coding</h6>
-                                    <h4>SawMill</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-06.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-06.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Webdesign</h6>
-                                    <h4>Browar</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-07.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-07.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Experiment</h6>
-                                    <h4>Wood Tables</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-08.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-08.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Product Design</h6>
-                                    <h4>Air Purifier</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-10.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-10.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">App Developing</h6>
-                                    <h4>Boombox</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-11.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-11.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">3D Art</h6>
-                                    <h4>The Deer</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                        <a href="assets/img/img-work-09.png" class="card ts-gallery__item popup-image" data-animate="ts-fadeInUp">
-                            <div class="ts-gallery__image">
-                                <img src="assets/img/img-work-09.png" class="card-img" alt="">
-                                <div class="ts-gallery__item-description">
-                                    <h6 class="ts-opacity__50">Rebranding</h6>
-                                    <h4>Dafont</h4>
-                                </div>
-                                <!--end ts-gallery__item-description-->
-                            </div>
-                            <!--end ts-gallery__image-->
-                        </a>
-                        <!--end card ts-gallery__item-->
-                    </div>
-                    <!--end ts-gallery-->
-                </div>
-                <!--end container-->
-            </section>
-            <!--end portfolio-->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
 
-            <section class="ts-block" data-bg-image="assets/img/bg-man-sitting.jpg">
-                <div class="container ts-promo-numbers">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="43">0</figure>
-                                <h5>Clients</h5>
-                            </div>
-                            <!--end ts-promo-number-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="68">0</figure>
-                                <h5>Projects</h5>
-                            </div>
-                            <!--end ts-promo-number-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="17">0</figure>
-                                <h5>Awards</h5>
-                            </div>
-                            <!--end ts-promo-number-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="ts-promo-number text-center">
-                                <figure class="odometer" data-odometer-final="12">0</figure>
-                                <h5>Years Experience</h5>
-                            </div>
-                            <!--end ts-promo-number-->
-                        </div>
-                        <!--end col-md-3-->
-                    </div>
-                </div>
-            </section>
-            <!--end ts-block-->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
 
-            <section id="testimonials" class="ts-block text-center pb-5">
-                <div class="container">
-                    <div class="ts-title">
-                        <h2>Testimonials</h2>
-                    </div>
-                    <!--end ts-title-->
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="owl-carousel" data-owl-dots="1" data-owl-loop="1" data-animate="ts-fadeInUp">
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-                                        In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus
-                                        fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis
-                                    </p>
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/person.jpg"></div>
-                                    <h5>Jane Doe</h5>
-                                    <h6 class="ts-opacity__40">Bristol Creative</h6>
-                                </div>
-                                <!--end slide-->
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-                                        Nam egestas porta posuere. Nunc velit lorem, vestibulum vitae massa nec, lacinia dictum
-                                        ligula. Quisque scelerisque nec dolor id convallis. Vestibulum porta ipsum pretium
-                                        turpis rhoncus, non fringilla ipsum mattis.
-                                    </p>
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/person-02.jpg"></div>
-                                    <h5>John Brown</h5>
-                                    <h6 class="ts-opacity__40">ABC Architects</h6>
-                                </div>
-                                <!--end slide-->
-                            </div>
-                            <!--end owl-carousel-->
-                        </div>
-                        <!--end col-md-8-->
-                    </div>
-                    <!--end row-->
-                </div>
-                <!--end container-->
-            </section>
-            <!--end #testimonials ts-block-->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
 
-            <!--LOGOS ***********************************************************************************************-->
-            <section id="partners" class="ts-block py-4">
-                <!--container-->
-                <div class="container">
-                    <!--block of logos-->
-                    <div class="d-block d-md-flex justify-content-between align-items-center text-center ts-partners py-3">
-                        <a href="#">
-                            <img src="assets/img/logo-01-w.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-02-w.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-03-w.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-04-w.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="assets/img/logo-05-w.png" alt="">
-                        </a>
-                    </div>
-                    <!--end logos-->
-                </div>
-                <!--end container-->
-            </section>
-            <!--END LOGOS *******************************************************************************************-->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
 
-        </main>
-        <!--end #content-->
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
 
-        <!--*********************************************************************************************************-->
-        <!--************ FOOTER *************************************************************************************-->
-        <!--*********************************************************************************************************-->
-        <footer id="ts-footer" class="mt-5">
+          </ul>
 
-            <section id="contact" class="ts-block ts-separate-bg-element" data-bg-image="assets/img/bg-man-wall.jpg" data-bg-image-opacity=".1">
-                <div class="container">
-                    <div class="ts-title text-center">
-                        <h2 class="ts-bubble-border">Get In Touch</h2>
-                    </div>
-                    <div class="row ts-xs-text-center ">
-                        <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp">
-                            <img src="assets/img/icon-pin.png" class="mb-4" alt="">
-                            <h5>Address</h5>
-                            <div class="ts-opacity__50">
-                                <figure class="mb-0">Old Kottawa Rd</figure>
-                                <figure>Pannipitiya, LK 10230</figure>
-                            </div>
-                            <!--end ts-opacity__50-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".1s">
-                            <img src="assets/img/icon-phone-02.png" class="mb-4" alt="">
-                            <h5>Phone</h5>
-                            <div class="ts-opacity__50">
-                                <figure class="mb-0">+94 76-8622-302</figure>
-                            </div>
-                            <!--end ts-opacity__50-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".2s">
-                            <img src="assets/img/icon-envelope.png" class="mb-4" alt="">
-                            <h5>Email</h5>
-                            <div class="ts-opacity__50">
-                                <figure class="mb-0">contact@sayuru.me</figure>
-                                <figure>sayuru555@gmail.com</figure>
-                            </div>
-                            <!--end ts-opacity__50-->
-                        </div>
-                        <!--end col-md-3-->
-                        <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".3s">
-                            <img src="assets/img/icon-talk-bubble.png" class="mb-4" alt="">
-                            <h5>Instant Chat</h5>
-                            <div class="ts-opacity__50">
-                                <figure><a href="https://t.me/sayuru_akash">Telegram</a></figure>
-								<figure><a href="https://wa.me/+940768622302">WhatsApp</a></figure>
-                            </div>
-                            <!--end ts-opacity__50-->
-                        </div>
-                        <!--end col-md-3-->
-                    </div>
-                    <!--end row-->
+        </section>
 
-                    <div class="pt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>Let’s Connect</h3>
-                                <div class="ts-column-count-sm-2">
-                                    <a href="https://facebook.com/sayuru.me" class="mb-3 d-flex text-white ts-align__vertical">
-                                    <span class="ts-circle__xs border border-white ts-border-light mr-4">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </span>
-                                        <span>Facebook</span>
-                                    </a>
-                                    <!--end link-->
-                                    <a href="https://twitter.com/sayuru_akash" class="mb-3 d-flex text-white ts-align__vertical">
-                                    <span class="ts-circle__xs border border-white ts-border-light mr-4">
-                                        <i class="fab fa-twitter"></i>
-                                    </span>
-                                        <span>Twitter</span>
-                                    </a>
-                                    <!--end link-->
-                                    <a href="https://instagram.com/sayuru_akash" class="mb-3 d-flex text-white ts-align__vertical">
-                                    <span class="ts-circle__xs border border-white ts-border-light mr-4">
-                                        <i class="fab fa-instagram"></i>
-                                    </span>
-                                        <span>Instagram</span>
-                                    </a>
-                                    <!--end link-->
-                                    <a href="https://pinterest.com/sayuru_akash" class="mb-3 d-flex text-white ts-align__vertical">
-                                    <span class="ts-circle__xs border border-white ts-border-light mr-4">
-                                        <i class="fab fa-pinterest-p"></i>
-                                    </span>
-                                        <span>Pinterest</span>
-                                    </a>
-                                    <!--end link-->
-                                    <a href="https://join.skype.com/invite/eOuUjEi6pJYX" class="mb-3 d-flex text-white ts-align__vertical">
-                                    <span class="ts-circle__xs border border-white ts-border-light mr-4">
-                                        <i class="fab fa-skype"></i>
-                                    </span>
-                                        <span>Skype</span>
-                                    </a>
-                                    <!--end link-->
-                                </div>
-                            </div>
-                            <!--end col-md-4-->
-							
-			<!--contact form hidden
-                            <div class="col-md-8">
-                                <h3>Send Me a Message</h3>
-                                <form id="form-contact" method="post" class="clearfix ts-form ts-form-email" data-php-path="assets/php/email.php">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form-contact-name">Name *</label>
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Name" required>
-                                            </div>
-                                            <!--end form-group -->
-			<!--contact form hidden
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-             <!--contact form hidden     <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form-contact-email">Email *</label>
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Email" required>
-                                            </div>
-                                            <!--end form-group -->
-              <!--contact form hidden    </div>
-                                        <!--end col-md-6 col-sm-6 -->
-            <!--contact form hidden     </div>
-                                    <!--end row -->
-             <!--contact form hidden    <div class="form-group">
-                                        <label for="form-contact-subject">Subject *</label>
-                                        <input type="email" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
-                                    </div>
-                                    <!--end form-group -->
-          <!--contact form hidden     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form-contact-message">Message *</label>
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Message" required></textarea>
-                                            </div>
-                                            <!--end form-group -->
-              <!--contact form hidden       </div>
-                                        <!--end col-md-12 -->
-          <!--contact form hidden          </div>
-                                    <!--end row -->
-           <!--contact form hidden   <div class="form-group clearfix">
-                                        <button type="submit" class="btn btn-primary float-right ts-btn-arrow" id="form-contact-submit">Send a Message</button>
-                                    </div>
-                                    <!--end form-group -->
-          <!--contact form hidden           <div class="form-contact-status"></div>
-                                </form>
-                                <!--end form-contact -->
-    <!--contact form hidden      </div>
-                        </div>
-                        <!--end row-->
-                    </div>
-					</div>			<!--contact form hidden add div end--> </div>
-                <!--end container-->
-            </section>
-            <!--end #contact-->
+      </article>
 
-            <div class="text-dark bg-white">
-                <div class="container py-3 position-relative">
-                    <small>© 2020 Sayuru Akash, All Rights Reserved</small>
-                    <a href="#page-top" class="ts-circle__xs rounded-0 bg-dark position-absolute ts-right__0 ts-top__0 ts-push-up__50 ts-scroll">
-                        <i class="fa fa-arrow-up text-white"></i>
-                    </a>
-                </div>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-        </footer>
-        <!--end #footer-->
+            <h3 class="h3">Education</h3>
+          </div>
 
-    </div>
-    <!--end page-->
+          <ol class="timeline-list">
 
-    <!-- Modal -->
-    <div class="modal fade text-dark" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content border-0 rounded-0">
-                <div class="modal-header bg-light px-5 pt-0 pb-5">
-                    <div class="ts-title mb-0">
-                        <figure class="ts-circle__md bg-dark rounded-0">
-                            <img src="assets/img/icon-brushes.png" alt="">
-                        </figure>
-                        <h4 class="mb-0">Web Design</h4>
-                    </div>
+            <li class="timeline-item">
 
-                    <button type="button" class="close position-absolute ts-top__0 ts-right__0 m-2" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="text-white">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body p-5">
-                    <h5 class="mb-4">Latest Works</h5>
-                    <div class="owl-carousel" data-owl-dots="1">
-                        <div class="slide">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/img-work-detail-01.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 class="mb-3">Creative Lights</h4>
-                                        <p>
-                                            In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus
-                                            fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est
-                                            ultricies.
-                                        </p>
-                                        <a href="#" class="mb-4 text-dark d-block">
-                                            <i class="fa fa-globe ts-opacity__50 mr-2"></i>
-                                            www.example.com
-                                        </a>
-                                        <hr>
-                                        <h6>Services Included</h6>
-                                        <ul class="list-unstyled ts-opacity__50">
-                                            <li>Design</li>
-                                            <li>Coding</li>
-                                            <li>SEO Optimization</li>
-                                            <li>Hosting</li>
-                                        </ul>
-                                    </div>
-                                    <!--end col-md-8-->
-                                </div>
-                                <!--end row-->
-                            </div>
-                            <!--end container-fluid-->
-                        </div>
-                        <!--end slide-->
-                        <div class="slide">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/img-work-detail-02.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 class="mb-3">Wood Ceiling</h4>
-                                        <p>
-                                            Phasellus volutpat velit nec purus elementum feugiat. Nunc feugiat fringilla turpis.
-                                            Nam sed facilisis sem. Vestibulum vitae orci nec purus fringilla condimentum.
-                                            Pellentesque id augue rhoncus, finibus sapien ut, commodo eros. Maecenas in nibh
-                                            augue. Nunc rutrum blandit massa eu aliquet. Nulla facilisi. Aenean luctus ipsum
-                                            in orci sagittis auctor vel sit amet ex
-                                        </p>
-                                        <a href="#" class="mb-4 text-dark d-block">
-                                            <i class="fa fa-globe ts-opacity__50 mr-2"></i>
-                                            www.example.com
-                                        </a>
-                                        <hr>
-                                        <h6>Services Included</h6>
-                                        <ul class="list-unstyled ts-opacity__50">
-                                            <li>Design</li>
-                                            <li>Coding</li>
-                                            <li>SEO Optimization</li>
-                                            <li>Hosting</li>
-                                        </ul>
-                                    </div>
-                                    <!--end col-md-8-->
-                                </div>
-                                <!--end row-->
-                            </div>
-                            <!--end container-fluid-->
-                        </div>
-                        <!--end slide-->
-                    </div>
-                    <!--end owl-carousel-->
-                </div>
-                <!--end modal-body-->
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-            <!--end modal-content-->
-        </div>
-        <!--end modal-dialog-->
-    </div>
-    <!--end modal-->
 
-	<script src="assets/js/custom.hero.js"></script>
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/js/isInViewport.jquery.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/scrolla.jquery.min.js"></script>
-	<script src="assets/js/jquery.validate.min.js"></script>
-	<script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
-	<script src="assets/js/odometer.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
